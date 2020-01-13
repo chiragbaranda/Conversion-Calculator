@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--	
+	# I, CHIRAG BARANDA, student number 000759867, certify that all code submitted is my own work; 
+		#that I have not copied it from any other source.  
+		#I also certify that I have not allowed my work to be copied by others.
+
+	#Author: CHIRAG BARANDA, 000759867
+	#Date : 18th Sept, 2018
+	#purpose : This HTML file contains the form, which take 4 inputs (3 text fields and 1 radio button) and sent it 
+		   to the conversion.php file to convert the Correspoing value i.e Celsius to Fahrenheit or Fahrenheit to Celsius.
+-->
+
+
+<html>
+<head>
+	<title> CAD TO USD </title>
+</head>
+<body>
+<table border = 2 cellspacing = 2 cellpadding=7  align ="center">
+	<tr>
+	<td colspan= 2 align ="center">  Temprature Conversion </td>
+	</tr>
+
+	<form action="conversion.php" method="GET"> <!-- Form tag which is redirected to Conversion.php using get method-->
+	<tr>
+	<!--Radio Buttons -->	
+	<td><input type="radio" name="conversionValue" value="celtofer" required> Celsius to Fahrenheit</td>
+	<td><input type="radio" name="conversionValue" value="fertocel" required> Fahrenheit to Celsius</td>
+	
+	<tr>
+	<!--Three Input Text  : Min, Max, Nuber of steps-->
+	<td>Min: <input type="number" name="minValue" Placeholder="Enter Minimum Number" required> </td>
+	<td>Max: <input type="number" name="maxValue" Placeholder="Enter Maximum Number" required> </td>
+	</tr>
+
+	<tr>
+	<td align ="center"> Number of Steps  </td> 
+	<td> <input type="number" name="NumberOfSteps" Placeholder= "Enter Number of steps" required> </td>
+	</tr>
+	
+	<tr>
+	<td colspan=2 align ="center"> <!--Submit Button-->
+	<input type="submit" name="submit"> </td>
+	</tr>
+
+	<tr>
+	<td colspan= 2 align ="center"> JUMP TO: <a href="index.html"> Currency conversion </a> <!-- This is link to Another Converion Page --> </td>
+	</tr>
+
+
+
+	</form>
+
+</body>
+</html>
